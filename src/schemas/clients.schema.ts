@@ -9,3 +9,7 @@ export const ClientsSchema = z.object({
 })
 
 export type ClientData = z.infer<typeof ClientsSchema>
+
+export const CreateClientSchema = ClientsSchema.omit({ id: true })
+
+export type CreateClientData = z.infer<typeof CreateClientSchema>

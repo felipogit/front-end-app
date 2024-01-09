@@ -11,7 +11,7 @@ const Card = ({ client }: CardProps) => {
 
     return (
         
-        <div className="flex flex-col items-center gap-4 border-2 p-4">
+        <div className="flex flex-col items-center gap-4 border-2 border-pink-500 p-4">
             <h1> Nome: {client.name}</h1>
             <p> CPF/CNPJ: {client.cpfCnpj}</p>
             <p>Telefone: {client.telephone}</p>
